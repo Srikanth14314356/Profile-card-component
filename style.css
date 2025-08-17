@@ -1,0 +1,102 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Card header background */
+.card-header {
+  background: url('./images/bg-pattern-card.svg') no-repeat center/cover;
+  height: 140px;
+}
+
+/* Profile image */
+.profile-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -50px;
+}
+
+/* Card body */
+.card-body h2 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-body h2 span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.card-body p {
+  color: hsl(227, 10%, 46%);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Footer stats */
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-top: 1px solid hsl(227, 10%, 90%);
+}
+
+.card-footer h3 {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-footer p {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+  .card-footer {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
